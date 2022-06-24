@@ -1,0 +1,4 @@
+/*
+a programming paradigm centers around
+objects ranter than functions
+*/
