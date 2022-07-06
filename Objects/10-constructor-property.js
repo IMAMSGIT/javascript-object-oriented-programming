@@ -10,6 +10,8 @@ const another = new Circle(23);
 console.log(another);
 console.log(another.constructor);
 
+// just an example
+// of String constructor
 let x = new String();
 x = "It is a String";
 console.log(x);
