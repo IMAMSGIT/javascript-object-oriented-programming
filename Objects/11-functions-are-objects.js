@@ -4,16 +4,15 @@ function Circle(radius) {
     console.log("Draw");
   };
 }
-console.log(Circle.name);
 
-const Circle1 = new Function(
-  "Radius",
-  `this.radius = radius,
-this.draw = function () {
-console.log("Draw");
-}
-`
-);
-
-const circle = new Circle1(23);
+// works as same as new
+// to create a new object
+const circle = Circle.call({}, 1);
 console.log(circle);
+
+const circle1 = new Circle(1);
+console.log(circle1);
+
+// apply method also works as
+// call but have to pass
+// an array as second argument
